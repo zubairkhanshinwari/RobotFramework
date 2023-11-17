@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.8.2 on win32)" generated="20231114 11:46:44.974" rpa="false" schemaversion="4">
+<suite id="s1" name="Screenshot" source="e:\robotframework\testcase\screenshot.robot">
+<test id="s1-t1" name="Screenshot" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://dev.falaya.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231114 11:46:46.334" level="INFO">Opening browser 'chrome' to base url 'https://dev.falaya.com/'.</msg>
+<status status="PASS" starttime="20231114 11:46:46.326" endtime="20231114 11:46:57.958"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231114 11:46:57.963" endtime="20231114 11:46:58.374"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>xpath://img[@alt='home_illustration']</arg>
+<arg>image1.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20231114 11:46:58.911" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="image1.png"&gt;&lt;img src="image1.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231114 11:46:58.378" endtime="20231114 11:46:58.913"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>image2.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231114 11:46:59.291" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="image2.png"&gt;&lt;img src="image2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231114 11:46:58.916" endtime="20231114 11:46:59.294"/>
+</kw>
+<status status="PASS" starttime="20231114 11:46:46.319" endtime="20231114 11:46:59.300"/>
+</test>
+<status status="PASS" starttime="20231114 11:46:45.005" endtime="20231114 11:46:59.314"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Screenshot">Screenshot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
